@@ -9,7 +9,7 @@
     "build": "tsc",
     "dev": "tsc -w",
     "start": "node dist/server.js",
-    "lint": "eslint --cached",
+    "lint": "eslint --cache",
     "pretty": "prettier --write"
   },
   "repository": {
