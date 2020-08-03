@@ -25,10 +25,12 @@ jobs:
           name: code-coverage-report
           path: coverage
       - name: comment coverage
-        uses: romeovs/lcov-reporter-action@v0.2.16
+        uses: devmasx/coverage-check-action@v1.1.0
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          lcov-file: ./coverage/lcov.info
+          type: simplecov
+          result_path: coverage/coverage-final.json
+          min_coverage: 90
+          token: ${{secrets.GITHUB_TOKEN}}
   lint:
     runs-on: ubuntu-latest
     strategy:
