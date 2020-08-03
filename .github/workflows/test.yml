@@ -24,7 +24,7 @@ jobs:
         with:
           name: code-coverage-report
           path: coverage
-      - name: comment coverage
+      - name: fail if no coverage
         uses: devmasx/coverage-check-action@v1.1.0
         with:
           type: simplecov

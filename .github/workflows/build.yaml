@@ -18,9 +18,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn --frozen-lockfile
-      - run: yarn run test:coverage
-      - name: Archive production artifacts
+      - run: yarn run build
+      - name: Archive production code
         uses: actions/upload-artifact@v2
         with:
-          name: dist-without-markdown
+          name: build
           path: dist
