@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/paynoattn/learn-github-actions#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "request-ip": "^2.1.3"
   },
   "devDependencies": {
